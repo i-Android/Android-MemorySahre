@@ -29,7 +29,7 @@ int MemoryShare::mmapMemoryShare(int fd) {
 		return -1;
 	}
 
-	__android_log_print(ANDROID_LOG_INFO,"libatrack", "ashmem addr:%d", mPSHM);
+	__android_log_print(ANDROID_LOG_INFO,"libatrack", "ashmem addr:%x", mPSHM);
 
 	return 0;
 }

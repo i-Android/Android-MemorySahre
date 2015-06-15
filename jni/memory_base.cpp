@@ -31,6 +31,7 @@ int liblwmm_ashmem_mmap(int fd, int size) {
 
 	uint8_t * pSHM = mmap(0, size,  PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 	if (pSHM == MAP_FAILED) {
+		__android_log_print(ANDROID_LOG_INFO,"libatrack", "mmap error");
 		return -1;
 	}
 	__android_log_print(ANDROID_LOG_INFO,"libatrack", "mmap ashmem");

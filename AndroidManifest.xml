@@ -22,16 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-		<activity
-            android:name="com.example.android_memoryshare.TestActivity" 
-     		android:process=":remote">
+        <activity
+            android:name="com.example.android_memoryshare.TestActivity"
+            android:process=":remote" >
         </activity>
-        
+
         <service
             android:name="com.alibaba.laiwang.android.MemoryService"
             android:process=":remote" />
-
     </application>
 
 </manifest>
