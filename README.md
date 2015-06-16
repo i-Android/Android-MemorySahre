@@ -3,6 +3,7 @@ Android-MemorySahre
 
 use ashmem ipc in native.
 
+this plan will be used to transcate large buffer data between two proceess.
 
 process A:
 
